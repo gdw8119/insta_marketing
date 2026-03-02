@@ -79,3 +79,29 @@ Last updated: 2026-03-02 (Asia/Seoul)
   1. macOS Command Line Tools 설치
   2. 설치 확인 후 원격 저장소 연결
   3. `agent.md` 커밋/푸시로 동기화 완료
+
+### 2026-03-02 19:29 KST
+- What was done: Git 동기화 실행(로컬 저장소 초기화, 원격 등록, 커밋 생성) 후 GitHub 푸시 시도.
+- Key decisions:
+  - 로컬 Git 저장소 생성 및 `main` 브랜치 사용
+  - 원격 `https://github.com/gdw8119/insta_marketing.git` 연결
+  - 인증 미구성 상태로 자동 푸시는 보류
+- Outputs created/updated:
+  - 로컬 Git 커밋: `1a0aaba` (`docs: add instagram overseas marketing working memory`)
+  - `/Users/dong-u/Documents/해외인스타/agent.md` (세션 로그 추가)
+- Next actions:
+  1. GitHub 인증 방식 설정(HTTPS credential helper 또는 SSH 키)
+  2. `git push -u origin main` 실행
+  3. 원격 저장소 반영 확인
+
+### 2026-03-02 19:54 KST
+- What was done: Git 인증 이슈 해결 후 동기화 재개 준비 상태 점검(`main` ↔ `origin/main` 확인) 및 누락 로그 정리.
+- Key decisions:
+  - 로컬 변경분은 `agent.md`만 커밋/푸시
+  - 시스템 파일(`.DS_Store`)은 동기화 대상에서 제외
+- Outputs created/updated:
+  - `/Users/dong-u/Documents/해외인스타/agent.md` (세션 로그 추가)
+- Next actions:
+  1. `agent.md` 커밋
+  2. 원격(`origin/main`) 푸시
+  3. 동기화 완료 상태 확인
