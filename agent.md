@@ -105,3 +105,15 @@ Last updated: 2026-03-02 (Asia/Seoul)
   1. `agent.md` 커밋
   2. 원격(`origin/main`) 푸시
   3. 동기화 완료 상태 확인
+
+### 2026-03-04 00:14 KST
+- What was done: `simple-shorts-generator` 저장소에 인스타 해외마케팅 메모(`agent.md`) 동기화 완료.
+- Key decisions:
+  - 기존 `simple-shorts-generator` 원격 이력과 충돌 방지를 위해 별도 클론 후 파일 추가 방식 채택
+  - 원본 작업 저장소(`insta_marketing`)의 세션 로그도 동일 시점 업데이트
+- Outputs created/updated:
+  - `simple-shorts-generator` 커밋: `28aed2f` (`docs: add instagram overseas marketing agent memory`)
+  - `/Users/dong-u/Documents/해외인스타/agent.md` (세션 로그 추가)
+- Next actions:
+  1. 이후 세션 종료 시 동일 포맷으로 로그 누적
+  2. 필요 시 `agent.md`를 템플릿화해 다중 저장소 공통 적용
